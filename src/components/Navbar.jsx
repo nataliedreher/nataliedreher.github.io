@@ -22,7 +22,6 @@ export default class Navbar extends Component {
                             Natalie Dreher
                     </Menu.Item>
                     </Link>
-                    {/* Will use this later upon refactor
                     <Link to="/about">
                         <Menu.Item
                             name='aboutMe'
@@ -31,7 +30,7 @@ export default class Navbar extends Component {
                         >
                             About Me
                     </Menu.Item>
-                    </Link> */}
+                    </Link>
                     <Link to="/portfolio">
                         <Menu.Item
                             name='portfolio'

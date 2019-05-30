@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Header, Image, Grid } from "semantic-ui-react"
 import "semantic-ui-css/semantic.min.css";
-import ProfilePic from "../images/DA342876-1.jpg";
+import ProfilePic from "../../images/DA342876-1.jpg";
 
 
 function About() {

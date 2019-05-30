@@ -1,7 +1,7 @@
 import React from "react";
 import "semantic-ui-css/semantic.min.css";
-import { Container, Header, Grid } from "semantic-ui-react"
-import PortfolioItems from "../components/PortfolioItems"
+import { Container, Grid } from "semantic-ui-react"
+import PortfolioItems from "./items/PortfolioItems"
 
 function Portfolio() {
 

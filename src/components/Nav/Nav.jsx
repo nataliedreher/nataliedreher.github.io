@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import { Menu, Segment, Modal } from 'semantic-ui-react'
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import Contact from "../pages/Contact";
+import Contact from "../Contact/Contact";
 
-export default class Navbar extends Component {
+export default class Nav extends Component {
     state = { activeItem: 'home' }
 
     handleItemClick = (e, { name }) => this.setState({ activeItem: name })

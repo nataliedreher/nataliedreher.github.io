@@ -1,44 +1,45 @@
 import React from 'react';
-import "semantic-ui-css/semantic.min.css";
-import './App.css';
-import Navbar from "./components/Navbar.jsx";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import { Image, Menu } from 'semantic-ui-react'
-import Contact from "./pages/Contact.jsx";
-import About from "./pages/About.jsx";
-import Main from "./pages/Main.jsx";
-import Portfolio from "./pages/Portfolio.jsx";
-import BGImage from "./images/344_243_1558895986144635898004111912095(2).jpg"
-import 'react-sticky-header/styles.css';
+import "semantic-ui-css/semantic.min.css";
+import { Menu } from 'semantic-ui-react'
+import './App.css';
+import About from "./components/About/About.jsx";
+import Education from "./components/Education/Education.jsx";
+import Main from "./components/Main/Main.jsx"
+import Navbar from "./components/Nav/Nav.jsx";
+import Portfolio from "./components/Portfolio/Portfolio.jsx";
 import StickyHeader from 'react-sticky-header';
+import 'react-sticky-header/styles.css';
 
 function App() {
   return (
     <Router >
-  <StickyHeader header={
-      <Navbar />
-    } />
-    
-
-      <Image src={BGImage} style={{ marginTop: 0 }} />
-      <About />
+      <StickyHeader header={
+        <Navbar />
+      } />
       <Main />
+      <About />
+      <Education />
       <Portfolio />
-
-      {/* <Switch>
-        <Route exact path='/' component={About} /> */}
-        {/* Will use this later upon refactor <Route exact path='/about' component={About} /> */}
-        {/* <Route exact path='/contact' component={Contact} />
-        <Route exact path='/portfolio' component={Portfolio} />
-      </Switch> */}
-      <Contact />
       <Menu inverted>
-        <Menu.Item name='home' />
         <Menu.Item
-          name='messages'
+          icon="linkedin"
+          content={
+            <a href="https://www.linkedin.com/in/natalie-dreher-79683742" target="_blank" rel="noopener noreferrer">Natalie Dreher</a>
+          }
         />
         <Menu.Item
-          name='friends'
+          icon="github"
+          content={
+            <a href="https://github.com/natalied84"
+              target="_blank" rel="noopener noreferrer">Github</a>}
+
+        />
+        <Menu.Item
+          icon="mail"
+          content={
+            <a href='mailto:n-dreher@hotmail.com'>n-dreher@hotmail.com</a>
+          }
         />
       </Menu>
     </Router>

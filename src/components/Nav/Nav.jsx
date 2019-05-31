@@ -14,15 +14,15 @@ export default class Nav extends Component {
         return (
             <Segment inverted>
                 <Menu inverted pointing secondary>
-                    <Link to="/">
+                    {/* <Link to="/"> */}
                         <Menu.Item
                             name='home'
                             active={activeItem === 'home'}
                             onClick={this.handleItemClick} >
                             Natalie Dreher
                     </Menu.Item>
-                    </Link>
-                    <Link to="/about">
+                    {/* </Link>
+                    <Link to="/about"> */}
                         <Menu.Item
                             name='aboutMe'
                             active={activeItem === 'aboutMe'}
@@ -30,8 +30,8 @@ export default class Nav extends Component {
                         >
                             About Me
                     </Menu.Item>
-                    </Link>
-                    <Link to="/portfolio">
+                    {/* </Link>
+                    <Link to="/portfolio"> */}
                         <Menu.Item
                             name='portfolio'
                             active={activeItem === 'portfolio'}
@@ -39,7 +39,7 @@ export default class Nav extends Component {
                         >
                             Portfolio
                     </Menu.Item>
-                    </Link>
+                    {/* </Link> */}
                     <Modal size="mini" trigger={
                         <Menu.Item
                             name='contactMe'

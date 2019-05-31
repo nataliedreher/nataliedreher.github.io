@@ -1,11 +1,11 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+// import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "semantic-ui-css/semantic.min.css";
-import { Menu } from 'semantic-ui-react'
+import { Menu, Container } from 'semantic-ui-react'
 import './App.css';
 import About from "./components/About/About.jsx";
 import Education from "./components/Education/Education.jsx";
-import Main from "./components/Main/Main.jsx"
+// import Main from "./components/Main/Main.jsx"
 import Navbar from "./components/Nav/Nav.jsx";
 import Portfolio from "./components/Portfolio/Portfolio.jsx";
 import StickyHeader from 'react-sticky-header';
@@ -13,11 +13,17 @@ import 'react-sticky-header/styles.css';
 
 function App() {
   return (
-    <Router >
+    <>
       <StickyHeader header={
         <Navbar />
       } />
-      <Main />
+
+      {/* <Main /> */}        
+      <div id="h1-wrapper">
+      <h1>Natalie Dreher</h1>
+        </div>
+
+      <Container fluid className="main-section">
       <About />
       <Education />
       <Portfolio />
@@ -42,7 +48,8 @@ function App() {
           }
         />
       </Menu>
-    </Router>
+      </Container>
+    </>
   );
 }
 

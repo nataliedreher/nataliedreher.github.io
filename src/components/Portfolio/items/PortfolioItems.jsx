@@ -1,13 +1,17 @@
 import React, { Component } from 'react';
 import "semantic-ui-css/semantic.min.css";
-import { Container, Header, Menu, Sidebar, Segment, Icon, Grid, Image } from 'semantic-ui-react'
+import { Modal, Header, Menu, Sidebar, Dimmer, Icon, Grid, Image } from 'semantic-ui-react'
+import "../Portfolio.css";
 
 
 class PortfolioItems extends Component {
 
     state = {
-        visible: false
+        visible: false,
     }
+
+    handleShow = () => this.setState({ active: true })
+    handleHide = () => this.setState({ active: false })
 
     imageClick = () => {
         if (this.state.visible) {
@@ -19,6 +23,18 @@ class PortfolioItems extends Component {
     handleSidebarHide = () => this.setState({ visible: false })
 
     render() {
+        const { active } = this.state;
+        const content = (
+            <>
+                <Header as='h3' inverted>
+                    Technologies:
+                </Header>
+                {
+                    <p>{this.props.technologies}</p>
+                }
+            </>
+        );
+
         return (
             <Grid.Column >
 
@@ -36,6 +52,16 @@ class PortfolioItems extends Component {
                         style={{ height: "5px" }}
                     >
                         <Header style={{ marginTop: "10px" }} as="h4" inverted >{this.props.projectTitle}</Header>
+                        {this.props.sandbox ? <Modal centered style={{ width: "98%" }} trigger={<Menu.Item>
+                            <Icon name='code' />
+                            Codesandbox
+                        </Menu.Item>}
+                        >
+                            <div className="iframe-container">
+                                <iframe src={this.props.sandbox} title="react-clicky-game" allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin">                            <p>Your browser does not support iframes.</p>
+                                </iframe>
+                            </div>
+                        </Modal> : <></>}
                         <Menu.Item as='a' href={this.props.repo} target="_blank" rel="noopener noreferrer">
                             <Icon name='github' />
                             Repository
@@ -47,17 +73,23 @@ class PortfolioItems extends Component {
                     </Sidebar>
 
                     <Sidebar.Pusher >
-                        <Image
+                        <Dimmer.Dimmable
+                            as={Image}
                             fluid
                             label={{ as: 'a', color: 'blue', content: this.props.flag, icon: this.props.fontIcon, ribbon: true }}
                             rounded
                             src={this.props.source}
                             onClick={this.imageClick}
+                            dimmed={active}
+                            dimmer={{ active, content }}
+                            onMouseEnter={this.handleShow}
+                            onMouseLeave={this.handleHide}
                             style={{ margin: "0 10px 0 10px", width: "16vw", height: "auto" }} />
                     </Sidebar.Pusher>
                 </Sidebar.Pushable>
             </Grid.Column>
-        )}
+        )
+    }
 }
 
 

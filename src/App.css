@@ -14,7 +14,7 @@ body {
 h1{
 
 	font-size: 80px;
-  color: #ecbe45;
+  color: #B2AEE2;
   background: rgb(0, 0, 0);
   background:rgba(0, 0, 0, 0.7);
   padding: 5px;
@@ -33,4 +33,8 @@ h1{
   height: 100vh;
    justify-content: center;
     align-items: center;
+}
+
+#skill-header, #about-header, #edu-header, #portfolio-header {
+  font-size: 36px;
 }

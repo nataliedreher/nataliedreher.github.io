@@ -7,14 +7,15 @@ import ProfilePic from "../../images/DA342876-1.jpg";
 function About() {
 
     return (
-        <Container style={{ margin: "50px 0 50px 0" }}>
+        <div style={{backgroundColor: "#B2AEE2" }}>
+        <Container style={{ padding: "80px 15px"}}>
             <Grid>
                 <Grid.Row>
                     <Grid.Column width={4}>
                         <Image src={ProfilePic} size="small" circular floated='left' style={{ margin: "0 10px 5px 0" }} />
                     </Grid.Column>
                     <Grid.Column width={12}>
-                        <Header as="h2" >ABOUT</Header>
+                        <Header  id="about-header" as="h2" >ABOUT</Header>
                         <p>
                             I am a web developer with experience primarily in front-end JavaScript and Node.js with a particular interest in learning back-end languages. I received my Bachelor's in Economics and Mathematics from Metro State University of Denver in 2012. There I learned technical thinking skills and the perseverance to solve complex problems. In my previous career, I worked as a Sales Operations Analyst working primarily in MS Excel and MySQL. In my role I had to process large Excel datasets using complicated nested If Statements. I was also responsible for crafting daily and weekly reports which often included managing the SQL queries involved. Working with complicated Excel formulas in particular got me interested in programming and in turn web development.
                         </p>
@@ -25,6 +26,7 @@ function About() {
                 </Grid.Row>
             </Grid>
         </Container>
+        </div>
     )
 }
 

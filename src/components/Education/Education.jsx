@@ -5,11 +5,11 @@ import "semantic-ui-css/semantic.min.css";
 function Main() {
 
   return (
-    <Container style={{ margin: "0 0 50px 0" }}>
+    <Container style={{ padding: "80px 0" }}>
       <Grid>
         <Grid.Row>
           <Grid.Column width={6}>
-            <Header as="h2" >EDUCATION</Header>
+            <Header id="edu-header" as="h2" >EDUCATION</Header>
           </Grid.Column>
           <Grid.Column width={10}>
             <Header as="h4" >UNIVERSITY OF DENVER FULL-STACK FLEX WEB DEVELOPMENT BOOTCAMP</Header>

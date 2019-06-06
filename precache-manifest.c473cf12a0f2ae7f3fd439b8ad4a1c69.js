@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "03d35c9125b9e4b2f7d9b23b7d6f1cae",
+    "revision": "d4de05e2f65d834af3d5ba5e96e31382",
     "url": "/index.html"
   },
   {
-    "revision": "8f31646b1f4ad9f43114",
+    "revision": "c58112370278fe0edbe4",
     "url": "/static/css/2.833923ed.chunk.css"
   },
   {
-    "revision": "b759549c6f776f2ae680",
-    "url": "/static/css/main.5f5b911e.chunk.css"
+    "revision": "1d6c9f25123cecbd802e",
+    "url": "/static/css/main.b4873cf9.chunk.css"
   },
   {
-    "revision": "8f31646b1f4ad9f43114",
-    "url": "/static/js/2.c988c13c.chunk.js"
+    "revision": "c58112370278fe0edbe4",
+    "url": "/static/js/2.c46bde57.chunk.js"
   },
   {
-    "revision": "b759549c6f776f2ae680",
-    "url": "/static/js/main.ba519003.chunk.js"
+    "revision": "1d6c9f25123cecbd802e",
+    "url": "/static/js/main.61d64119.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -28,8 +28,44 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/344_243_1558895986144635898004111912095(2).8b09c53e.jpg"
   },
   {
+    "revision": "06596577ae4143d9d51e2184310e23dd",
+    "url": "/static/media/Boostrap-Logo.06596577.svg"
+  },
+  {
+    "revision": "0d61aec517f7ce771aa38aea005bd81b",
+    "url": "/static/media/CSS-Logo.0d61aec5.svg"
+  },
+  {
     "revision": "ec7a8fdf1f15cc203946f668537c967a",
     "url": "/static/media/DA342876-1.ec7a8fdf.jpg"
+  },
+  {
+    "revision": "84c147064df993fd69d13c6531347d43",
+    "url": "/static/media/Giphy-Logo.84c14706.png"
+  },
+  {
+    "revision": "ee5f3cfa6bc7ea16a3dbdf0a536aeb21",
+    "url": "/static/media/HTML-Logo.ee5f3cfa.svg"
+  },
+  {
+    "revision": "b012529ab0ac6954f6ae34038bb9ebf6",
+    "url": "/static/media/JS-Logo.b012529a.svg"
+  },
+  {
+    "revision": "6aac6ad7c03e9be02023d77a8abb8336",
+    "url": "/static/media/MongoDB-Logo.6aac6ad7.svg"
+  },
+  {
+    "revision": "7849979f33dfcac7d7ea565e0e387ea2",
+    "url": "/static/media/MySQL-Logo.7849979f.svg"
+  },
+  {
+    "revision": "89ccb09060a7adf788ea2340c54d6d78",
+    "url": "/static/media/Node-Logo.89ccb090.svg"
+  },
+  {
+    "revision": "f0793d9f85eb3f0d1c702c14d236ba9e",
+    "url": "/static/media/React-Logo.f0793d9f.svg"
   },
   {
     "revision": "13db00b7a34fee4d819ab7f9838cc428",

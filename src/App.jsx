@@ -1,40 +1,35 @@
 import React, { Component } from 'react';
-// import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import "semantic-ui-css/semantic.min.css";
 import { Menu, Container } from 'semantic-ui-react'
 import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
-import './App.css';
 import About from "./components/About/About.jsx";
 import Education from "./components/Education/Education.jsx";
-// import Main from "./components/Main/Main.jsx"
 import Navbar from "./components/Nav/Nav.jsx";
 import Portfolio from "./components/Portfolio/Portfolio.jsx";
 import StickyHeader from 'react-sticky-header';
 import Skills from "./components/Skills/Skills.jsx"
+import "semantic-ui-css/semantic.min.css";
 import 'react-sticky-header/styles.css';
+import './App.css';
 
 class App extends Component {
-  state = { activeItem: "Home" }
+  state = { activeItem: "Home" };
 
   receiveActiveChange = active => {
     this.setState({ activeItem: active });
-
     active === "home" ? this.scrollToTop() : this.scrollTo();
-
-
-  }
-
+  };
 
   scrollToTop() {
     scroll.scrollToTop();
-  }
+  };
+
   scrollTo() {
     scroller.scrollTo('scroll-to-element', {
       duration: 800,
       delay: 0,
       smooth: 'easeInOutQuart'
-    })
-  }
+    });
+  };
 
   render() {
     return (
@@ -50,7 +45,7 @@ class App extends Component {
           <h1>Natalie Dreher</h1>
         </div>
 
-        <Container fluid className="main-section">
+        <Container fluid id="main-section">
           <Element name="aboutMe" className="element" >
             <About />
           </Element>
@@ -87,7 +82,7 @@ class App extends Component {
         </Container>
       </>
     );
-  }
-}
+  };
+};
 
 export default App;

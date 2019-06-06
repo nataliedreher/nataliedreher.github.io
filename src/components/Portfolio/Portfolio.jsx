@@ -1,8 +1,8 @@
 import React from "react";
 import "semantic-ui-css/semantic.min.css";
-import { Container, Grid, Header } from "semantic-ui-react"
-import PortfolioItems from "./items/PortfolioItems"
-import GiphyLogo from "../../images/Giphy-Logo.png"
+import { Container, Grid, Header } from "semantic-ui-react";
+import PortfolioItems from "./items/PortfolioItems";
+import GiphyLogo from "../../images/Giphy-Logo.png";
 
 function Portfolio() {
 
@@ -45,7 +45,6 @@ function Portfolio() {
             projectTitle="Giphy API"
             technologies="Bootstrap 4, JQuery, Giphy's API" />
         </Grid.Row>
-
         <Grid.Row>
           <PortfolioItems
             source="https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/000/256/full/nodejslogo.png"
@@ -73,12 +72,7 @@ function Portfolio() {
         </Grid.Row>
       </Grid>
     </Container>
-  )
-}
-
-
+  );
+};
 
 export default Portfolio;
-
-
-

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Header, List } from "semantic-ui-react"
+import { Header, List } from "semantic-ui-react"
 import "semantic-ui-css/semantic.min.css";
 
 function Contact() {
@@ -18,6 +18,6 @@ function Contact() {
       </List>
     </div>
   );
-}
+};
 
 export default Contact;

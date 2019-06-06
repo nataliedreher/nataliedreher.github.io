@@ -27,8 +27,7 @@ function Main() {
         </Grid.Row>
       </Grid>
     </Container>
-  )
-
-}
+  );
+};
 
 export default Main;

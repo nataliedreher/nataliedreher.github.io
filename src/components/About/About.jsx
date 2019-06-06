@@ -7,8 +7,8 @@ import ProfilePic from "../../images/DA342876-1.jpg";
 function About() {
 
     return (
-        <div style={{backgroundColor: "#B2AEE2" }}>
-        <Container style={{ padding: "80px 15px"}}>
+        <div id="about-wrapper">
+        <Container>
             <Grid>
                 <Grid.Row>
                     <Grid.Column width={4}>
@@ -27,7 +27,7 @@ function About() {
             </Grid>
         </Container>
         </div>
-    )
-}
+    );
+};
 
 export default About;

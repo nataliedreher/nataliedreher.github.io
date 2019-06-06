@@ -1,38 +1,35 @@
-import React, { Component } from "react"
-import { Menu, Segment, Modal } from "semantic-ui-react"
-import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+import React, { Component } from "react";
+import { Menu, Segment, Modal } from "semantic-ui-react";
+import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from "react-scroll";
 import Contact from "../Contact/Contact";
 
 export default class Nav extends Component {
     state = { activeItem: "home" }
 
     componentDidMount() {
-
         Events.scrollEvent.register('begin', function () {
             console.log("begin", arguments);
         });
-
         Events.scrollEvent.register('end', function () {
             console.log("end", arguments);
         });
-
-    }
+    };
 
     scrollTo() {
         scroller.scrollTo('scroll-to-element', {
             duration: 800,
             delay: 0,
             smooth: 'easeInOutQuart'
-        })
-    }
+        });
+    };
 
     handleItemClick = (e, { name }) => {
-        this.setState({ activeItem: name })
-        this.props.receiveActiveChange(name)
-    }
+        this.setState({ activeItem: name });
+        this.props.receiveActiveChange(name);
+    };
 
     render() {
-        const { activeItem } = this.state
+        const { activeItem } = this.state;
 
         return (
             <Segment inverted>

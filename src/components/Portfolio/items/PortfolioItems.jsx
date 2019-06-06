@@ -10,8 +10,9 @@ class PortfolioItems extends Component {
         visible: false,
     }
 
-    handleShow = () => this.setState({ active: true })
-    handleHide = () => this.setState({ active: false })
+    handleShow = () => this.setState({ active: true });
+    handleHide = () => this.setState({ active: false });
+    handleSidebarHide = () => this.setState({ visible: false });
 
     imageClick = () => {
         if (this.state.visible) {
@@ -19,8 +20,7 @@ class PortfolioItems extends Component {
         } else {
             this.setState({ visible: true });
         };
-    }
-    handleSidebarHide = () => this.setState({ visible: false })
+    };
 
     render() {
         const { active } = this.state;
@@ -37,8 +37,6 @@ class PortfolioItems extends Component {
 
         return (
             <Grid.Column >
-
-                {/* {this.state.dropdownOpen ? <Button>Click Here</Button> : <></>} */}
                 <Sidebar.Pushable >
                     <Sidebar
                         as={Menu}
@@ -84,13 +82,13 @@ class PortfolioItems extends Component {
                             dimmer={{ active, content }}
                             onMouseEnter={this.handleShow}
                             onMouseLeave={this.handleHide}
-                            style={{ margin: "0 10px 0 10px", width: "16vw", height: "auto" }} />
+                            style={{ padding: "0 10px 0 0", marginLeft: 10 }} />
                     </Sidebar.Pusher>
                 </Sidebar.Pushable>
             </Grid.Column>
-        )
-    }
-}
+        );
+    };
+};
 
 
 export default PortfolioItems;

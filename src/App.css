@@ -24,8 +24,9 @@ h1{
 
   /* text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white; */
 }
-.main-section {
-  background: white
+#main-section {
+  background: white;
+  background-image: url("https://www.transparenttextures.com/patterns/fancy-deboss.png");
 }
 
 #h1-wrapper {
@@ -37,4 +38,15 @@ h1{
 
 #skill-header, #about-header, #edu-header, #portfolio-header {
   font-size: 36px;
+}
+
+#about-wrapper {
+  background: #B2AEE2 url("https://www.transparenttextures.com/patterns/fancy-deboss.png");
+  padding: 80px 15px;
+}
+
+#skills-wrapper { 
+  padding: 80px;
+  background: #A7C1DE url("https://www.transparenttextures.com/patterns/fancy-deboss.png"); 
+
 }

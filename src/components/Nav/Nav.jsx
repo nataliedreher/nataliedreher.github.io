@@ -1,36 +1,27 @@
 import React, { Component } from "react";
 import { Menu, Segment, Modal } from "semantic-ui-react";
-import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from "react-scroll";
+import { Link } from "react-scroll";
 import Contact from "../Contact/Contact";
 
 export default class Nav extends Component {
-    state = { activeItem: "home" }
-
-    componentDidMount() {
-        Events.scrollEvent.register('begin', function () {
-            console.log("begin", arguments);
-        });
-        Events.scrollEvent.register('end', function () {
-            console.log("end", arguments);
-        });
-    };
-
-    scrollTo() {
-        scroller.scrollTo('scroll-to-element', {
-            duration: 800,
-            delay: 0,
-            smooth: 'easeInOutQuart'
-        });
-    };
+    state = { activeItem: "home"}
 
     handleItemClick = (e, { name }) => {
-        this.setState({ activeItem: name });
-        this.props.receiveActiveChange(name);
+         this.props.receiveActiveChange(name);
     };
 
-    render() {
-        const { activeItem } = this.state;
+    handleScroll = () => {
+        this.setState({ activeItem: this.props.appState })
+    };
 
+    componentDidMount() {
+        console.log("prop ", this.props.appState )
+    }
+
+    render() {
+
+        const { activeItem } = this.state;
+        document.addEventListener("scroll", this.handleScroll)
         return (
             <Segment inverted>
                 <Menu inverted pointing secondary>
@@ -73,7 +64,7 @@ export default class Nav extends Component {
                             active={activeItem === "portfolio"}
                             onClick={this.handleItemClick}
                         >
-                            Portfolio
+                            Projects
                     </Menu.Item>
                     </Link>
                     <Modal size="mini" trigger={

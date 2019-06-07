@@ -76,6 +76,7 @@ class PortfolioItems extends Component {
                             fluid
                             label={{ as: 'a', color: 'blue', content: this.props.flag, icon: this.props.fontIcon, ribbon: true }}
                             rounded
+                            className="project-icon"
                             src={this.props.source}
                             onClick={this.imageClick}
                             dimmed={active}

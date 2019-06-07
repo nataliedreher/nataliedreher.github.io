@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Menu, Container } from 'semantic-ui-react'
-import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
+import { Element, animateScroll as scroll, scroller } from 'react-scroll';
 import About from "./components/About/About.jsx";
 import Education from "./components/Education/Education.jsx";
 import Navbar from "./components/Nav/Nav.jsx";
@@ -12,7 +12,7 @@ import 'react-sticky-header/styles.css';
 import './App.css';
 
 class App extends Component {
-  state = { activeItem: "Home" };
+  state = { activeItem: "home" };
 
   receiveActiveChange = active => {
     this.setState({ activeItem: active });
@@ -31,12 +31,51 @@ class App extends Component {
     });
   };
 
-  render() {
+  componentDidMount() {
+    let about = document.querySelector('#aboutMe');
+    let skills = document.querySelector('#skills');
+    let education = document.querySelector('#education');
+    let portfolio = document.querySelector('#portfolio');
+    const elArray = [about, skills, education, portfolio]
+    const getElemDistance = elem => {
+      let location = 0;
+      if (elem.offsetParent) {
+        do {
+          location += elem.offsetTop;
+          elem = elem.offsetParent;
+        } while (elem);
+      }
+      return location >= 0 ? location : 0;
+    };
+    const locations = elArray.map(ids => getElemDistance(ids))
+    const locationHandler = () => {
+      if (window.pageYOffset < (locations[0] - 400)) {
+        this.setState({ activeItem: "home"})
+      } else if ((locations[0] - 400) < window.pageYOffset && window.pageYOffset < (locations[1] - 400)) {
+        console.log(locations[1])
+        this.setState({ activeItem: "aboutMe"})
+      } else if ((locations[1] - 400) < window.pageYOffset && window.pageYOffset < (locations[2] - 400)) {
+        this.setState({ activeItem: "skills"})
+      } else if ((locations[2] - 400) < window.pageYOffset && window.pageYOffset < (locations[3] - 440)) {
+        this.setState({ activeItem: "education"})
+      } else {
+        this.setState({ activeItem: "portfolio"})
+      }
+      console.log(this.state.activeItem)
+      console.log(window.pageYOffset)
+
+    }
+    document.addEventListener("scroll", locationHandler)
+//  document.addEventListener("scroll", console.log(this.state.activeItem))
+    console.log(locations)
+  };
+
+  render() { 
     return (
       <>
         <StickyHeader header={
 
-          <Navbar receiveActiveChange={this.receiveActiveChange} />
+          <Navbar appState={this.state.activeItem} receiveActiveChange={this.receiveActiveChange} />
 
         } />
 
@@ -46,17 +85,17 @@ class App extends Component {
         </div>
 
         <Container fluid id="main-section">
-          <Element name="aboutMe" className="element" >
+          <Element id="aboutMe" name="aboutMe" className="element" >
             <About />
           </Element>
-          <Element name="skills" className="element" >
-          <Skills />
+          <Element id="skills" name="skills" className="element" >
+            <Skills />
           </Element>
-          <Element name="education" className="element" >
-          <Education />
+          <Element id="education" name="education" className="element" >
+            <Education />
           </Element>
-          <Element name="portfolio" className="element" >
-          <Portfolio />
+          <Element id="portfolio" name="portfolio" className="element" >
+            <Portfolio />
           </Element>
           <Menu inverted>
             <Menu.Item
@@ -80,6 +119,7 @@ class App extends Component {
             />
           </Menu>
         </Container>
+
       </>
     );
   };

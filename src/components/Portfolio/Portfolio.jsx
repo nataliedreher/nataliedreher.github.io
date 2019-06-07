@@ -5,7 +5,6 @@ import PortfolioItems from "./items/PortfolioItems";
 import GiphyLogo from "../../images/Giphy-Logo.png";
 
 function Portfolio() {
-
   return (
     <Container style={{ padding: "80px 0" }}>
       <Header style={{ textAlign: "center" }} id="portfolio-header" as="h2" >PROJECTS</Header>
@@ -17,7 +16,8 @@ function Portfolio() {
             fontIcon="node"
             repo="https://github.com/natalied84/bamazon"
             projectTitle='"Bamazon"'
-            technologies="Node.js, MySQL, Inquirer.js" />
+            technologies="Node.js, MySQL, Inquirer.js" 
+            description="Basic CLI app that could be used to manage purchases, inventory, ect."/>
           <PortfolioItems
             source="https://vignette.wikia.nocookie.net/dbxfanon/images/f/f0/Steven_Shield_WD.png/revision/latest?cb=20161011162806"
             flag="React Clicky Game"
@@ -26,7 +26,8 @@ function Portfolio() {
             deployment="https://natalied84.github.io/React-Clicky-Game/"
             sandbox="https://codesandbox.io/embed/github/natalied84/React-Clicky-Game/tree/master/?fontsize=14"
             projectTitle="React Clicky Game"
-            technologies="React.js" />
+            technologies="React.js" 
+            description="Built using React.js, objective is to click images only once"/>
           <PortfolioItems
             source="https://img1.coastalliving.timeinc.net/sites/default/files/image/2015/04/main/pigeon_key2_400.jpg"
             flag="Floridaman"
@@ -34,7 +35,8 @@ function Portfolio() {
             repo="https://github.com/natalied84/FloridaMan"
             deployment="https://agile-reaches-72423.herokuapp.com/"
             projectTitle="Floridaman"
-            technologies="React.js, Node.js, Express, Semantic-UI, Passport.js, MongoDB" />
+            technologies="React.js, Node.js, Express, Semantic-UI, Passport.js, MongoDB" 
+            description="Meme webpage built to address the lack of a Floridaman API that can be called to receive JSON data"/>
           <PortfolioItems
             source={GiphyLogo}
             flag="Giphy API"
@@ -43,7 +45,8 @@ function Portfolio() {
             deployment="https://natalied84.github.io/Giphy-HW/"
             sandbox="https://codesandbox.io/embed/giphyhw-vymyp?fontsize=14"
             projectTitle="Giphy API"
-            technologies="Bootstrap 4, JQuery, Giphy's API" />
+            technologies="Bootstrap 4, JQuery, Giphy's API" 
+            description="App that displays reaction gifs that are obtained from the Giphy API using GET calls"/>
         </Grid.Row>
         <Grid.Row>
           <PortfolioItems
@@ -52,7 +55,8 @@ function Portfolio() {
             fontIcon="node"
             repo="https://github.com/natalied84/liri-node-app"
             projectTitle="Liri"
-            technologies="Node.js, Axios, Moment.js, Inquirer.js" />
+            technologies="Node.js, Axios, Moment.js, Inquirer.js" 
+            description="Simple CLI app that can be used to look up concert infomation, get trivia, insult the user, etc."/>
           <PortfolioItems
             source="https://img-aws.ehowcdn.com/400x400/ds-img.studiod.com/Amtrak_Cascades_cars_1.jpg"
             flag="Train Time"
@@ -60,7 +64,8 @@ function Portfolio() {
             repo="https://github.com/natalied84/Train-Time"
             deployment="https://natalied84.github.io/Train-Time/"
             projectTitle="Train Time"
-            technologies="Firebase, Moment.js, JQuery, Bootstrap 4" />
+            technologies="Firebase, Moment.js, JQuery, Bootstrap 4" 
+            description="Simple train scheduling app."/>
           <PortfolioItems
             source="https://yt3.ggpht.com/a/AGF-l78n1ObZIb20TfEMucfzkXY6hY2AjQL-ixgOAw=s900-mo-c-c0xffffffff-rj-k-no"
             flag='Mongo "News" Scraper'
@@ -68,7 +73,8 @@ function Portfolio() {
             repo="https://github.com/natalied84/Mongoose-Scraper"
             deployment="https://intense-spire-75697.herokuapp.com/"
             projectTitle='Mongo "News" Scraper'
-            technologies="Node.js, Express, MongoDB, Cheerio.js, Handlebars.js" />
+            technologies="Node.js, Express, MongoDB, Cheerio.js, Handlebars.js" 
+            description="App built using a Express/MongoDB back-end. Allows users to search and save articles from the satire website, Clickhole."/>
         </Grid.Row>
       </Grid>
     </Container>

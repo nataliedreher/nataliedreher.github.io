@@ -4,24 +4,24 @@ import { Link } from "react-scroll";
 import Contact from "../Contact/Contact";
 
 export default class Nav extends Component {
-    state = { activeItem: "home"}
+    state = { activeItem: "home"};
 
     handleItemClick = (e, { name }) => {
          this.props.receiveActiveChange(name);
     };
 
     handleScroll = () => {
-        this.setState({ activeItem: this.props.appState })
+        this.setState({ activeItem: this.props.appState });
     };
 
     componentDidMount() {
-        console.log("prop ", this.props.appState )
-    }
+        console.log("prop ", this.props.appState );
+    };
 
     render() {
 
         const { activeItem } = this.state;
-        document.addEventListener("scroll", this.handleScroll)
+        document.addEventListener("scroll", this.handleScroll);
         return (
             <Segment inverted>
                 <Menu inverted pointing secondary>
@@ -81,6 +81,6 @@ export default class Nav extends Component {
                     </Modal>
                 </Menu>
             </Segment>
-        )
-    }
-}
+        );
+    };
+};

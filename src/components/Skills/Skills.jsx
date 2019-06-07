@@ -10,9 +10,7 @@ import ExpressLogo from "../../images/Express-Logo.png";
 import MongoLogo from "../../images/MongoDB-Logo.svg";
 import MySQLLogo from "../../images/MySQL-Logo.svg";
 
-
 function Skills() {
-
     return (
         <div id="skills-wrapper">
             <Header id="skill-header" style={{ textAlign: "center", marginBottom: 30 }} as='h2'>Skills</Header>

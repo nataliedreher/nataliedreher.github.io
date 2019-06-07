@@ -29,9 +29,8 @@ class PortfolioItems extends Component {
                 <Header as='h3' inverted>
                     Technologies:
                 </Header>
-                {
-                    <p>{this.props.technologies}</p>
-                }
+                <p>{this.props.technologies}</p>
+                <p>{this.props.description}</p>
             </>
         );
 

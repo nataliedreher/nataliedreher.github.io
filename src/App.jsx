@@ -36,7 +36,7 @@ class App extends Component {
     let skills = document.querySelector('#skills');
     let education = document.querySelector('#education');
     let portfolio = document.querySelector('#portfolio');
-    const elArray = [about, skills, education, portfolio]
+    const elArray = [about, skills, education, portfolio];
     const getElemDistance = elem => {
       let location = 0;
       if (elem.offsetParent) {
@@ -47,7 +47,7 @@ class App extends Component {
       }
       return location >= 0 ? location : 0;
     };
-    const locations = elArray.map(ids => getElemDistance(ids))
+    const locations = elArray.map(ids => getElemDistance(ids));
     const locationHandler = () => {
       if (window.pageYOffset < (locations[0] - 400)) {
         this.setState({ activeItem: "home"})
@@ -60,30 +60,22 @@ class App extends Component {
         this.setState({ activeItem: "education"})
       } else {
         this.setState({ activeItem: "portfolio"})
-      }
-      console.log(this.state.activeItem)
-      console.log(window.pageYOffset)
+      };
+
 
     }
-    document.addEventListener("scroll", locationHandler)
-//  document.addEventListener("scroll", console.log(this.state.activeItem))
-    console.log(locations)
+    document.addEventListener("scroll", locationHandler);
   };
 
   render() { 
     return (
       <>
         <StickyHeader header={
-
           <Navbar appState={this.state.activeItem} receiveActiveChange={this.receiveActiveChange} />
-
         } />
-
-
         <div id="h1-wrapper">
           <h1>Natalie Dreher</h1>
         </div>
-
         <Container fluid id="main-section">
           <Element id="aboutMe" name="aboutMe" className="element" >
             <About />
@@ -119,7 +111,6 @@ class App extends Component {
             />
           </Menu>
         </Container>
-
       </>
     );
   };

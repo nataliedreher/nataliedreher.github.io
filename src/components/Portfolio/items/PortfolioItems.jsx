@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 import "semantic-ui-css/semantic.min.css";
-import { Modal, Header, Menu, Sidebar, Dimmer, Icon, Grid, Image } from 'semantic-ui-react'
+import { Modal, Header, Menu, Sidebar, Dimmer, Icon, Grid, Image } from "semantic-ui-react"
 import "../Portfolio.css";
 
 
@@ -26,7 +26,7 @@ class PortfolioItems extends Component {
         const { active } = this.state;
         const content = (
             <>
-                <Header as='h3' inverted>
+                <Header as="h3" inverted>
                     Technologies:
                 </Header>
                 <p>{this.props.technologies}</p>
@@ -39,18 +39,18 @@ class PortfolioItems extends Component {
                 <Sidebar.Pushable >
                     <Sidebar
                         as={Menu}
-                        animation='overlay'
-                        icon='labeled'
+                        animation="overlay"
+                        icon="labeled"
                         inverted
                         onHide={this.handleSidebarHide}
                         vertical
                         visible={this.state.visible}
-                        width='thin'
+                        width="thin"
                         style={{ height: "5px" }}
                     >
                         <Header style={{ marginTop: "10px" }} as="h4" inverted >{this.props.projectTitle}</Header>
                         {this.props.sandbox ? <Modal centered style={{ width: "98%" }} trigger={<Menu.Item>
-                            <Icon name='code' />
+                            <Icon name="code" />
                             Codesandbox
                         </Menu.Item>}
                         >
@@ -59,12 +59,12 @@ class PortfolioItems extends Component {
                                 </iframe>
                             </div>
                         </Modal> : <></>}
-                        <Menu.Item as='a' href={this.props.repo} target="_blank" rel="noopener noreferrer">
-                            <Icon name='github' />
+                        <Menu.Item as="a" href={this.props.repo} target="_blank" rel="noopener noreferrer">
+                            <Icon name="github" />
                             Repository
                         </Menu.Item>
-                        {this.props.deployment ? <Menu.Item as='a' href={this.props.deployment} target="_blank" rel="noopener noreferrer">
-                            <Icon name='desktop' />
+                        {this.props.deployment ? <Menu.Item as="a" href={this.props.deployment} target="_blank" rel="noopener noreferrer">
+                            <Icon name="desktop" />
                             Deployment
                         </Menu.Item> : <></>}
                     </Sidebar>
@@ -73,7 +73,7 @@ class PortfolioItems extends Component {
                         <Dimmer.Dimmable
                             as={Image}
                             fluid
-                            label={{ as: 'a', color: 'blue', content: this.props.flag, icon: this.props.fontIcon, ribbon: true }}
+                            label={{ as: "a", color: "blue", content: this.props.flag, icon: this.props.fontIcon, ribbon: true }}
                             rounded
                             className="project-icon"
                             src={this.props.source}

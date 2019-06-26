@@ -30,32 +30,6 @@ function Main() {
         </Parallax>
     );
 
-          //   <Parallax bgImage={BGImage} bgImageSizes="100%" 
-      //   renderLayer={percentage => (
-      //     <div>
-      //       <h1 style={{ 
-      //           position: "absolute",
-      //           left: "50%",
-      //           top: "50vh",
-      //           transform: "translate(-50%,-50%)",
-      //           fontSize: (240 / (6 * percentage * percentage)) - 80
-      //       }}>Natalie Dreher</h1>
-            
-      //     </div>
-      //   )}
-      // >
-      //   <div style={{ height: "100vh" }}>
-      //     <div>HTML inside the parallax</div>
-      //   </div>
-      // //   </Parallax>
-      // <div style={{
-        // minHeight: "100vh",
-        //   backgroundSize: "cover",
-        //   backgroundPosition: "center",
-        //   backgroundRepeat: "no-repeat",
-        //   backgroundAttachment: "fixed"
-        // }} >
-        //   <Image src={BGImage}/>
 }
 
 export default Main;

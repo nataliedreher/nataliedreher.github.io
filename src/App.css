@@ -1,4 +1,3 @@
-
 body {
   min-height: 100vh;
   background-image: url("./images/344_243_1558895986144635898004111912095(2).jpg");
@@ -11,19 +10,34 @@ body {
   background-attachment: fixed;
 }
 
-h1{
+h1 {
 
-	font-size: 80px;
+  font-size: 80px;
   color: #B2AEE2;
   background: rgb(0, 0, 0);
-  background:rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.7);
   padding: 5px;
-  padding-left:12px;
+  padding-left: 12px;
   letter-spacing: 0.1em;
   border-radius: 10px;
 
   /* text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white; */
 }
+
+#name-h2 {
+
+  font-size: 60px;
+  color: #B2AEE2;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.7);
+  padding: 5px;
+  padding-left: 12px;
+  letter-spacing: 0.1em;
+  border-radius: 10px;
+
+  /* text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white; */
+}
+
 #main-section {
   background: white;
   background-image: url("https://www.transparenttextures.com/patterns/fancy-deboss.png");
@@ -32,11 +46,14 @@ h1{
 #h1-wrapper {
   display: flex;
   height: 100vh;
-   justify-content: center;
-    align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
-#skill-header, #about-header, #edu-header, #portfolio-header {
+#skill-header,
+#about-header,
+#edu-header,
+#portfolio-header {
   font-size: 36px;
 }
 
@@ -45,8 +62,8 @@ h1{
   padding: 80px 15px;
 }
 
-#skills-wrapper { 
+#skills-wrapper {
   padding: 80px;
-  background: #A7C1DE url("https://www.transparenttextures.com/patterns/fancy-deboss.png"); 
+  background: #A7C1DE url("https://www.transparenttextures.com/patterns/fancy-deboss.png");
 
 }

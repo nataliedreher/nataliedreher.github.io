@@ -68,7 +68,6 @@ class PortfolioItems extends Component {
                             Deployment
                         </Menu.Item> : <></>}
                     </Sidebar>
-
                     <Sidebar.Pusher >
                         <Dimmer.Dimmable
                             as={Image}
@@ -89,6 +88,5 @@ class PortfolioItems extends Component {
         );
     };
 };
-
 
 export default PortfolioItems;

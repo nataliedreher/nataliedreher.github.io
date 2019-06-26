@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Menu, Container } from 'semantic-ui-react'
+import { Menu, Container, Responsive, Segment } from 'semantic-ui-react'
 import { Element, animateScroll as scroll, scroller } from 'react-scroll';
 import About from "./components/About/About.jsx";
 import Education from "./components/Education/Education.jsx";
@@ -52,11 +52,10 @@ class App extends Component {
       if (window.pageYOffset < (locations[0] - 400)) {
         this.setState({ activeItem: "home"})
       } else if ((locations[0] - 400) < window.pageYOffset && window.pageYOffset < (locations[1] - 400)) {
-        console.log(locations[1])
         this.setState({ activeItem: "aboutMe"})
       } else if ((locations[1] - 400) < window.pageYOffset && window.pageYOffset < (locations[2] - 400)) {
         this.setState({ activeItem: "skills"})
-      } else if ((locations[2] - 400) < window.pageYOffset && window.pageYOffset < (locations[3] - 440)) {
+      } else if ((locations[2] - 400) < window.pageYOffset && window.pageYOffset < (locations[3] - 460)) {
         this.setState({ activeItem: "education"})
       } else {
         this.setState({ activeItem: "portfolio"})
@@ -73,9 +72,12 @@ class App extends Component {
         <StickyHeader header={
           <Navbar appState={this.state.activeItem} receiveActiveChange={this.receiveActiveChange} />
         } />
-        <div id="h1-wrapper">
+        <Responsive style={{ background: "transparent" }} minWidth={768} as={Segment} id="h1-wrapper">
           <h1>Natalie Dreher</h1>
-        </div>
+        </Responsive>
+        <Responsive style={{ background: "transparent" }} maxWidth={767} as={Segment} id="h1-wrapper">
+          <h1 id="name-h2" >Natalie Dreher</h1>
+        </Responsive>
         <Container fluid id="main-section">
           <Element id="aboutMe" name="aboutMe" className="element" >
             <About />

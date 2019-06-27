@@ -41,8 +41,7 @@ class PortfolioItems extends Component {
             <Dimmer.Dimmable
                 as={Image}
                 fluid
-                label={{ as: "a", color: "blue", content: this.props.flag, icon: this.props.fontIcon, ribbon: true }}
-                rounded
+                label={{ as: "a", color: "blue", content: this.props.flag, icon: this.props.fontIcon, attached: "top" }}
                 className="project-icon"
                 src={this.props.source}
                 onClick={this.imageClick}
@@ -50,7 +49,7 @@ class PortfolioItems extends Component {
                 dimmer={{ active, content }}
                 onMouseEnter={this.handleShow}
                 onMouseLeave={this.handleHide}
-                style={{ padding: "0 10px 0 0", marginLeft: 10 }} />
+                style={{ padding: "0" }} />
         );
     };
 };

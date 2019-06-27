@@ -67,7 +67,7 @@ export default class Nav extends Component {
                             Projects
                     </Menu.Item>
                     </Link>
-                    <Modal size="mini" trigger={
+                    {/* <Modal size="mini" trigger={
                         <Menu.Item
                             name="contactMe"
 
@@ -78,7 +78,7 @@ export default class Nav extends Component {
                     </Menu.Item>
                     }>
                         <Contact />
-                    </Modal>
+                    </Modal> */}
                 </Menu>
             </Segment>
         );

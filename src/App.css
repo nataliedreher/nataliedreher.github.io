@@ -26,7 +26,7 @@ h1 {
 
 #name-h2 {
 
-  font-size: 60px;
+  font-size: 48px;
   color: #B2AEE2;
   background: rgb(0, 0, 0);
   background: rgba(0, 0, 0, 0.7);
@@ -48,6 +48,8 @@ h1 {
   height: 100vh;
   justify-content: center;
   align-items: center;
+  padding: 0;
+  margin: 0; 
 }
 
 #skill-header,
@@ -60,10 +62,10 @@ h1 {
 #about-wrapper {
   background: #B2AEE2 url("https://www.transparenttextures.com/patterns/fancy-deboss.png");
   padding: 80px 15px;
+  width:auto;
 }
 
 #skills-wrapper {
   padding: 80px;
   background: #A7C1DE url("https://www.transparenttextures.com/patterns/fancy-deboss.png");
-
 }

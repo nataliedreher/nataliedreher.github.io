@@ -91,11 +91,12 @@ class App extends Component {
           <Element id="portfolio" name="portfolio" className="element" >
             <Portfolio />
           </Element>
+          <Responsive minWidth={768} as={"div"}>
           <Menu inverted>
             <Menu.Item
               icon="linkedin"
               content={
-                <a href="https://www.linkedin.com/in/natalie-dreher-79683742" target="_blank" rel="noopener noreferrer">Natalie Dreher</a>
+                <a href="https://www.linkedin.com/in/natalie-dreher-79683742" target="_blank" rel="noopener noreferrer">LinkedIn</a>
               }
             />
             <Menu.Item
@@ -112,6 +113,32 @@ class App extends Component {
               }
             />
           </Menu>
+          </Responsive>
+          <Responsive maxWidth={767} as={"div"}>
+          <Menu inverted>
+            <Menu.Item
+              style={{ paddingLeft: 10, paddingRight: 10 }}
+              icon="linkedin"
+              content={
+                <a href="https://www.linkedin.com/in/natalie-dreher-79683742" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              }
+            />
+            <Menu.Item
+              style={{ paddingLeft: 10, paddingRight: 10 }}
+              icon="github"
+              content={
+                <a href="https://github.com/natalied84"
+                  target="_blank" rel="noopener noreferrer">Github</a>}
+            />
+            <Menu.Item
+              style={{ paddingLeft: 10, paddingRight: 10 }}
+              icon="mail"
+              content={
+                <a href='mailto:n-dreher@hotmail.com'>n-dreher@hotmail.com</a>
+              }
+            />
+          </Menu>
+          </Responsive>
         </Container>
       </>
     );

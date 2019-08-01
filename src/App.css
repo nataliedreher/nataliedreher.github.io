@@ -41,6 +41,7 @@ h1 {
 #main-section {
   background: white;
   background-image: url("https://www.transparenttextures.com/patterns/fancy-deboss.png");
+
 }
 
 #h1-wrapper {
@@ -62,10 +63,21 @@ h1 {
 #about-wrapper {
   background: #B2AEE2 url("https://www.transparenttextures.com/patterns/fancy-deboss.png");
   padding: 80px 15px;
-  width:auto;
+  width: auto;
 }
 
 #skills-wrapper {
   padding: 80px;
   background: #A7C1DE url("https://www.transparenttextures.com/patterns/fancy-deboss.png");
+}
+
+@media only screen and (max-width: 767px) {
+  #main-section {
+    margin-left: 0!important;
+    margin-right: 0!important;
+  }
+
+  .footer-items {
+    padding-left: 8px;
+  }
 }

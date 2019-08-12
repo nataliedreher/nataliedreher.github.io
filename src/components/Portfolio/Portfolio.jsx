@@ -80,7 +80,7 @@ function Portfolio() {
               technologies='Node.js, Express, MongoDB, Cheerio.js, Handlebars.js'
               description='App built using a Express/MongoDB back-end. Allows users to search and save articles from the satire website, Clickhole.' />
             <PortfolioItems
-              source='https://yt3.ggpht.com/a/AGF-l78n1ObZIb20TfEMucfzkXY6hY2AjQL-ixgOAw=s900-mo-c-c0xffffffff-rj-k-no'
+              source='https://pbs.twimg.com/profile_images/1083556384245977093/NJlh-4sg_400x400.jpg'
               flag='Reading List'
               fontIcon='book'
               repo='https://github.com/natalied84/Reading-List'
@@ -164,7 +164,7 @@ function Portfolio() {
               technologies='Node.js, Express, MongoDB, Cheerio.js, Handlebars.js'
               description='App built using a Express/MongoDB back-end. Allows users to search and save articles from the satire website, Clickhole.' />
             <PortfolioItems
-              source='https://yt3.ggpht.com/a/AGF-l78n1ObZIb20TfEMucfzkXY6hY2AjQL-ixgOAw=s900-mo-c-c0xffffffff-rj-k-no'
+              source='https://pbs.twimg.com/profile_images/1083556384245977093/NJlh-4sg_400x400.jpg'
               flag='Reading List'
               fontIcon='book'
               repo='https://github.com/natalied84/Reading-List'
@@ -256,7 +256,7 @@ function Portfolio() {
           </div>
           <div style={{ background: 'transparent' }}>
             <PortfolioItems
-              source='https://yt3.ggpht.com/a/AGF-l78n1ObZIb20TfEMucfzkXY6hY2AjQL-ixgOAw=s900-mo-c-c0xffffffff-rj-k-no'
+              source='https://pbs.twimg.com/profile_images/1083556384245977093/NJlh-4sg_400x400.jpg'
               flag='Reading List'
               fontIcon='book'
               repo='https://github.com/natalied84/Reading-List'

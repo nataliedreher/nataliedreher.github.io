@@ -84,7 +84,7 @@ function Portfolio() {
               flag='Reading List'
               fontIcon='book'
               repo='https://github.com/natalied84/Reading-List'
-              deployment='https://http://whispering-temple-40488.herokuapp.com/'
+              deployment='https://whispering-temple-40488.herokuapp.com/'
               projectTitle='Reading List'
               technologies='Laravel 5.8, PHP7, MySQL, jQuery, Google Books API'
               description='Reading list app built with Laravel, it features full authentication and a MySQL DB allowing users to save their lists from any browser.' />
@@ -168,7 +168,7 @@ function Portfolio() {
               flag='Reading List'
               fontIcon='book'
               repo='https://github.com/natalied84/Reading-List'
-              deployment='https://http://whispering-temple-40488.herokuapp.com/'
+              deployment='https://whispering-temple-40488.herokuapp.com/'
               projectTitle='Reading List'
               technologies='Laravel 5.8, PHP7, MySQL, jQuery, Google Books API'
               description='Reading list app built with Laravel, it features full authentication and a MySQL DB allowing users to save their lists from any browser.' />
@@ -260,7 +260,7 @@ function Portfolio() {
               flag='Reading List'
               fontIcon='book'
               repo='https://github.com/natalied84/Reading-List'
-              deployment='https://http://whispering-temple-40488.herokuapp.com/'
+              deployment='https://whispering-temple-40488.herokuapp.com/'
               projectTitle='Reading List'
               technologies='Laravel 5.8, PHP7, MySQL, jQuery, Google Books API'
               description='Reading list app built with Laravel, it features full authentication and a MySQL DB allowing users to save their lists from any browser.' />

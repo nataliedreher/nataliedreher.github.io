@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import "semantic-ui-css/semantic.min.css";
 import { Header, Dimmer, Icon, Image, Button } from "semantic-ui-react"
-import "../Portfolio.css";
+import "../../Portfolio.css";
 
 
-class PortfolioItems extends Component {
+class MobileItem extends Component {
 
     state = {
 
@@ -55,4 +55,4 @@ class PortfolioItems extends Component {
 };
 
 
-export default PortfolioItems;
+export default MobileItem;

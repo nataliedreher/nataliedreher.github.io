@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "semantic-ui-css/semantic.min.css";
 import { Modal, Header, Menu, Sidebar, Dimmer, Icon, Grid, Image } from "semantic-ui-react"
-import "../Portfolio.css";
+import "../../Portfolio.css";
 
 
 class PortfolioItems extends Component {

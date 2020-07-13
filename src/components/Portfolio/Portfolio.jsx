@@ -1,7 +1,6 @@
 import React from 'react';
 import 'semantic-ui-css/semantic.min.css';
 import { Container, Header, Responsive, Segment } from 'semantic-ui-react';
-// import styles from 'react-responsive-carousel/lib/styles/carousel.min.css';
 import PortfolioLg from './Grid/Large/GridLg';
 import PortfolioMd from './Grid/Medium/GridMd';
 import PortfolioMobile from './Mobile/Mobile';

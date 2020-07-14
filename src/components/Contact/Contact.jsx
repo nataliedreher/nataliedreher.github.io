@@ -2,8 +2,8 @@ import React from 'react';
 import { Header, List } from "semantic-ui-react"
 import "semantic-ui-css/semantic.min.css";
 
-function Contact() {
 
+function Contact() {
   return (
     <div style={{ margin: 15 }}>
       <Header as="h2" >Contact</Header>

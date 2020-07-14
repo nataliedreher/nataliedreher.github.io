@@ -6,7 +6,9 @@ import "../../Portfolio.css";
 
 class MobileItem extends Component {
 
-    state = {}
+    state = {
+
+    }
 
     handleShow = () => this.setState({ active: true });
     handleHide = () => this.setState({ active: false });

@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Menu, Segment, Responsive } from "semantic-ui-react";
 import { Link } from "react-scroll";
 
+
 export default class Nav extends Component {
     state = { activeItem: "home" };
 

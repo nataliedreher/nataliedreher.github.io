@@ -2,8 +2,8 @@ import React from 'react';
 import { Container, Header, Grid, Responsive } from "semantic-ui-react"
 import "semantic-ui-css/semantic.min.css";
 
-function Main() {
 
+function Main() {
   return (
     <>
       <Responsive minWidth={768} as={Container} style={{ padding: "80px 0" }}>

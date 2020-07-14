@@ -5,8 +5,6 @@ import { Parallax, Background } from 'react-parallax';
 import BGImage from "../../images/344_243_1558895986144635898004111912095(2).jpg"
 
 
-
-
 function Main() {
   return (
     <Parallax bgImage={BGImage} bgImageSizes="100%"

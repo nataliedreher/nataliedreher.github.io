@@ -1,0 +1,146 @@
+body {
+    min-height: 100vh;
+    background-image: url("../images/bg-img.jpg");
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+nav-link:hover {
+    color: white;
+}
+
+h1 {
+    
+    font-size: 4vw;
+    color: #B2AEE2;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    padding: 5px;
+    padding-left: 12px;
+    letter-spacing: 0.1em;
+    border-radius: 10px;
+  
+    /* text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white; */
+  }
+
+.sticky {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100
+  }
+
+#footer {
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 100
+}
+
+.icon {
+    height: 48px;
+}
+
+#name {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0; 
+
+  }
+
+#education-1 {
+    padding: 80px 0
+}
+
+#about-wrapper {
+    background: #B2AEE2 url("https://www.transparenttextures.com/patterns/fancy-deboss.png");
+    padding: 80px 15px;
+    width: auto;
+  }
+
+  #skills-wrapper-1 {
+
+    padding: 80px;
+    background: #A7C1DE url("https://www.transparenttextures.com/patterns/fancy-deboss.png");
+  }
+
+  #main-wrapper {
+    background: white;
+    background-image: url("https://www.transparenttextures.com/patterns/fancy-deboss.png");
+  }
+
+  .ui.hover.dimmer {
+    display: flex;
+    transition: opacity .25s ease-in-out;
+  }
+
+  .ui:hover>.ui.hover.dimmer {
+    opacity: 1;
+}
+
+@media only screen and (min-width: 1px) {
+  /* For tablets: */
+  #projects_lg {
+    display: none;
+  }
+
+  #projects_sm {
+    display: block;
+  }
+}
+  
+@media only screen and (min-width: 768px) {
+  /* For tablets: */
+  #projects_lg {
+    display: block;
+  }
+
+  #projects_sm {
+    display: none;
+  }
+}
+
+.pt_cont, .pt_cont_sm {
+  display: none;
+}
+
+.pt_unhide {
+  display: block;
+}
+
+#projects_sm, #projects_lg {
+  margin: 8%;
+  margin-top: 0%;
+  padding-bottom: 10%;
+}
+
+.no_hover:hover {
+  cursor: default !important;
+}
+
+#skill-header,
+#about-header,
+#edu-header,
+#proj-header {
+  font-size: 36px;
+}
+
+#skill-header,
+#proj-header  {
+  text-align: center; 
+  margin-bottom: 30
+}
+
+  #it8 {
+    padding-bottom: 80%;
+  }

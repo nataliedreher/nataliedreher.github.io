@@ -1,1 +1,557 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="shortcut icon" href="/favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><link rel="manifest" href="/manifest.json"/><title>Natalie Dreher</title><link href="/static/css/2.26655abe.chunk.css" rel="stylesheet"><link href="/static/css/main.a4a8a432.chunk.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div><script>!function(e){function r(r){for(var n,l,f=r[0],i=r[1],p=r[2],c=0,s=[];c<f.length;c++)l=f[c],Object.prototype.hasOwnProperty.call(o,l)&&o[l]&&s.push(o[l][0]),o[l]=0;for(n in i)Object.prototype.hasOwnProperty.call(i,n)&&(e[n]=i[n]);for(a&&a(r);s.length;)s.shift()();return u.push.apply(u,p||[]),t()}function t(){for(var e,r=0;r<u.length;r++){for(var t=u[r],n=!0,f=1;f<t.length;f++){var i=t[f];0!==o[i]&&(n=!1)}n&&(u.splice(r--,1),e=l(l.s=t[0]))}return e}var n={},o={1:0},u=[];function l(r){if(n[r])return n[r].exports;var t=n[r]={i:r,l:!1,exports:{}};return e[r].call(t.exports,t,t.exports,l),t.l=!0,t.exports}l.m=e,l.c=n,l.d=function(e,r,t){l.o(e,r)||Object.defineProperty(e,r,{enumerable:!0,get:t})},l.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},l.t=function(e,r){if(1&r&&(e=l(e)),8&r)return e;if(4&r&&"object"==typeof e&&e&&e.__esModule)return e;var t=Object.create(null);if(l.r(t),Object.defineProperty(t,"default",{enumerable:!0,value:e}),2&r&&"string"!=typeof e)for(var n in e)l.d(t,n,function(r){return e[r]}.bind(null,n));return t},l.n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return l.d(r,"a",r),r},l.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},l.p="/";var f=this.webpackJsonpportfolio=this.webpackJsonpportfolio||[],i=f.push.bind(f);f.push=r,f=f.slice();for(var p=0;p<f.length;p++)r(f[p]);var a=i;t()}([])</script><script src="/static/js/2.d9c17fc7.chunk.js"></script><script src="/static/js/main.4e8d0da5.chunk.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natalie Dreher</title>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./semantic/dist/semantic.min.css">
+    <script src="./semantic/dist/semantic.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+</head>
+
+<body>
+
+    <div id="nav" class="sticky" style="background-color: black;">
+        <div class="ui inverted menu">
+            <a href="#" id="nav-top" class="item">
+                Natalie Dreher
+            </a>
+            <a href="#about-wrapper" id="nav-about" class="item">
+                About
+            </a>
+            <a href="#skills-wrapper-1" id="nav-skills" class="item">
+                Skills
+            </a>
+            <a href="#education-1" id="nav-edu" class="item">
+                Education
+            </a>
+            <a href="#proj-wrapper" id="nav-proj" class="item">
+                Projects
+            </a>
+        </div>
+    </div>
+    <div id="name">
+
+        <h1 style=" 
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            z-index: 80;">Natalie Dreher</h1>
+
+    </div>
+    <div id="main-wrapper">
+        <div id="about-wrapper">
+            <div class="container">
+                <div class="ui grid stackable container">
+                    <div class="four wide column">
+                        <img class="ui small circular image" src="./images/DA342876-1.jpg" alt="">
+                    </div>
+                    <div class="twelve wide column">
+                        <h2 id="about-header">ABOUT</h2>
+                        <p>
+                            I am a software developer with experience in front-end languages such as JavaScript, though
+                            I have a particular interest in back-end languages and I am eager to apply my skills in a
+                            practical setting. I recently received my Bachelor's of Science in Computer Science at the
+                            University of Colorado in Boulder. My academic focus was on data structures, algorithms, and
+                            computer systems. There I also learn the fundamentals of machine learning, artificial
+                            intelligence, Android app development. My academic experience coupled with my previous
+                            experience have given me a strong foundation as an entry level software developer.
+                        </p>
+                        <p>
+                            In my previous career, I worked as a Sales Operations Analyst working primarily in MS Excel
+                            and MySQL. In my role I had to process large Excel datasets using complicated nested If
+                            Statements. I was also responsible for crafting daily and weekly reports which often
+                            included managing the SQL queries involved. Working with complicated Excel formulas in
+                            particular got me interested in programming.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="skills-wrapper-1">
+            <h2 id="skill-header">SKILLS</h2>
+            <div style="justify-content: space-evenly;" class="ui grid stackable container">
+                <div class="row">
+                    <div class="two wide column"><img class="icon" src="./images/HTML-Logo.svg" alt=""></div>
+                    <div class="two wide column"><img class="icon" src="./images/CSS-Logo.svg" alt=""></div>
+                    <div class="two wide column"><img class="icon" src="./images/JS-Logo.svg" alt=""></div>
+                    <div class="two wide column"><img class="icon" src="./images/c-logo.svg" alt=""></div>
+                    <div class="two wide column"><img class="icon" src="./images/flask-seeklogo.svg" alt=""></div>
+                </div>
+                <div class="row">
+                    <div class="two wide column"><img class="icon" src="./images/python-5.svg" alt=""></div>
+                    <div class="five wide column"><img class="icon" src="./images/android-studio-seeklogo.svg" alt="">
+                    </div>
+                    <div class="two wide column"><img class="icon" src="./images/MySQL-Logo.svg" alt=""></div>
+                </div>
+            </div>
+        </div>
+        <div id="education-1">
+            <div class="ui grid stackable container">
+                <div class="six wide column">
+                    <h2 id="edu-header">EDUCATION</h2>
+                </div>
+                <div class="ten wide column">
+                    <h4>UNIVERSITY OF COLORADO</h4>
+                    <h5>BACHELOR'S OF SCIENCE IN COMPUTER SCIENCE • DECEMBER 2024</h5>
+                    <p>GPA: 3.71</p>
+                    <p>Acquired key skills for front and back-end development through a thorough curriculum including
+                        HTML5, CSS3, JavaScript, Python, Java, C++, Database Design, MySQL, Command Line, Git, and more.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div id="proj-wrapper">
+            <div id="projects_lg">
+                <h2 id="proj-header">PROJECTS</h2>
+                <div class="ui grid">
+                    <div class="four wide left attached column">
+                        <div class="ui vertical fluid tabular menu">
+                            <a id="it1" class="active item pt_item" onClick="Pt_click(this.id)">
+                                Bloom Filter
+                            </a>
+                            <a id="it2" class="item pt_item" onClick="Pt_click(this.id)">
+                                React Match Game
+                            </a>
+                            <a id="it3" class="item pt_item" onClick="Pt_click(this.id)">
+                                Android Text Adventure
+                            </a>
+                            <a id="it4" class="item pt_item" onClick="Pt_click(this.id)">
+                                Giphy API
+                            </a>
+                            <a id="it5" class="item pt_item" onClick="Pt_click(this.id)">
+                                Liri CLI
+                            </a>
+                            <a id="it6" class="item pt_item" onClick="Pt_click(this.id)">
+                                Train Scheduler
+                            </a>
+                            <a id="it7" class="item pt_item" onClick="Pt_click(this.id)">
+                                Gymnasium AI Project
+                            </a>
+                            <a id="it8" class="item pt_item" onClick="Pt_click(this.id)">
+                                Minesweeper
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="twelve wide stretched right attached column segment">
+                        <div class="ui seamless right attached segment">
+
+                            <div id="cont_it1" class="pt_cont pt_unhide">
+                                <div class="ui one item menu">
+                                    <a class="item" href="https://github.com/nataliedreher/bloomfilter"
+                                        target="_blank">Repository</a>
+                                </div>
+                                <div class="ui grid container">
+                                    <div class="ui two column row">
+                                        <div class="column ">
+                                            <img id="img-sm-1" class="ui image port-img"
+                                                src="./images/Portfolio/dollar-sign-white.jpg" alt="">
+                                        </div>
+                                        <div class="column ">
+                                            <h4>Technologies:</h4>
+                                            <p>C++, CMake</p>
+                                            <h4>Description:</h4>
+                                            <p>Implementation of a simple Bloom filter.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="cont_it2" class="pt_cont">
+                                <div class="ui two item menu">
+                                    <a class="item" href="https://github.com/natalied84/React-Clicky-Game"
+                                        target="_blank">Repository</a>
+                                    <a class="item" href="https://natalied84.github.io/React-Clicky-Game/"
+                                        target="_blank">Deployment</a>
+                                </div>
+                                <div class="ui grid container">
+                                    <div class="ui two column row">
+                                        <div class="column ">
+                                            <img id="img-sm-2" class="ui image port-img"
+                                                src="./images/Portfolio/Steven_Shield_WD.png" alt="">
+                                        </div>
+                                        <div class="column">
+                                            <h4>Technologies:</h4>
+                                            <p>React.js</p>
+                                            <h4>Description:</h4>
+                                            <p>Built using React.js, objective is to click images only once.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div id="cont_it3" class="pt_cont">
+                                <div class="ui one item menu">
+                                    <a class="item" href="https://github.com/nataliedreher/ODMTavern_AndroidProject"
+                                        target="_blank">Repository</a>
+                                </div>
+                                <div class="ui grid container">
+                                    <div class="ui two column row">
+                                        <div class="column ">
+                                            <img id="img-sm-3" class="ui image port-img"
+                                                src="./images/Portfolio/tavern_640.jpg" alt="">
+                                        </div>
+                                        <div class="column">
+                                            <h4>Technologies:</h4>
+                                            <p>Java, Android Studio</p>
+                                            <h4>Description:</h4>
+                                            <p>Text-based adventure Game Android app.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="cont_it4" class="pt_cont">
+                                <div class="ui two item menu">
+                                    <a class="item" href="https://github.com/natalied84/Giphy-HW"
+                                        target="_blank">Repository</a>
+                                    <a class="item" href="https://natalied84.github.io/Giphy-HW/"
+                                        target="_blank">Deployment</a>
+                                </div>
+                                <div class="ui grid container">
+                                    <div class="ui two column row">
+                                        <div class="column ">
+                                            <img id="img-sm-4" class="ui image port-img"
+                                                src="./images/Portfolio/Giphy-Logo.png" alt="">
+                                        </div>
+
+                                        <div class="column">
+                                            <h4>Technologies:</h4>
+                                            <p>Bootstrap 4, JQuery, Giphy API</p>
+                                            <h4>Description:</h4>
+                                            <p>App that displays reaction GIFs that are obtained from the Giphy API
+                                                using
+                                                GET calls.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="cont_it5" class="pt_cont">
+                                <div class="ui one item menu">
+                                    <a class="item" href="https://github.com/natalied84/liri-node-app"
+                                        target="_blank">Repository</a>
+                                </div>
+                                <div class="ui grid container">
+                                    <div class="ui two column row">
+                                        <div class="column ">
+                                            <img id="img-sm-5" class="ui image port-img"
+                                                src="./images/Portfolio/nodejslogo.png" alt="">
+                                        </div>
+                                        <div class="column">
+                                            <h4>Technologies:</h4>
+                                            <p>Node.js, Axios, Moment.js, Inquirer.js</p>
+                                            <h4>Description:</h4>
+                                            <p>Simple CLI app that can be used to look up concert information, get
+                                                trivia,
+                                                insult the user, etc.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="cont_it6" class="pt_cont">
+                                <div class="ui two item menu">
+                                    <a class="item" href="https://github.com/natalied84/Train-Time"
+                                        target="_blank">Repository</a>
+                                    <a class="item" href="https://natalied84.github.io/Train-Time/"
+                                        target="_blank">Deployment</a>
+                                </div>
+                                <div class="ui grid container">
+                                    <div class="ui two column row">
+                                        <div class="column ">
+                                            <img id="img-sm-6" class="ui image port-img"
+                                                src="./images/Portfolio/Amtrak_Cascades_cars_1.jpg" alt=""
+                                                onclick="toggleLeft('sadfsdf')">
+                                        </div>
+                                        <div class="column">
+                                            <h4>Technologies:</h4>
+                                            <p>Firebase, Moment.js, JQuery, Bootstrap 4</p>
+                                            <h4>Description:</h4>
+                                            <p>Simple train scheduling app.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="cont_it7" class="pt_cont">
+                                <div class="ui one item menu">
+                                    <a class="item" href="https://github.com/nataliedreher/LunarLander-v2"
+                                        target="_blank">Repository</a>
+                                </div>
+                                <div class="ui grid container">
+                                    <div class="ui two column row">
+                                        <div class="column ">
+                                            <img id="img-sm-7" class="ui image port-img"
+                                                src="./images/Portfolio/ai-256.png" alt="">
+                                        </div>
+                                        <div class="column">
+                                            <h4>Technologies:</h4>
+                                            <p>Python, Gymnasium, Tensorboard, Stable Baselines 3</p>
+                                            <h4>Description:</h4>
+                                            <p>Project testing various AI learning methodologies on Gymnasium's Lunar
+                                                Lander
+                                                environment.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="cont_it8" class="pt_cont">
+                                <div class="ui two item menu">
+                                    <a class="item" href="https://github.com/lcbordelon/3308_Project_Group01"
+                                        target="_blank">Repository</a>
+                                    <a class="item" href="https://minesweeper3308.onrender.com/home"
+                                        target="_blank">Deployment</a>
+                                </div>
+                                <div class="ui grid container">
+                                    <div class="ui two column row">
+                                        <div class="column ">
+                                            <img id="img-sm-8" class="ui image port-img"
+                                                src="./images/Portfolio/mine-612.jpg" alt="">
+                                        </div>
+                                        <div class="column">
+                                            <h4>Technologies:</h4>
+                                            <p>Javascript, Flask, Python, SQLite3</p>
+                                            <h4>Description:</h4>
+                                            <p>Clone of the popular Windows game.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="projects_sm">
+                <h2 id="proj-header">PROJECTS</h2>
+                <div class="ui grid">
+                    <div class="four wide left attached column">
+                        <div class="ui vertical fluid tabular menu">
+                            <a id="it1_sm" class="active item pt_item_sm" onClick="Pt_click_sm(this.id)">
+                                Bloom Filter
+                            </a>
+                            <a id="it2_sm" class="item pt_item_sm" onClick="Pt_click_sm(this.id)">
+                                React Match Game
+                            </a>
+                            <a id="it3_sm" class="item pt_item_sm" onClick="Pt_click_sm(this.id)">
+                                Android Text Adventure
+                            </a>
+                            <a id="it4_sm" class="item pt_item_sm" onClick="Pt_click_sm(this.id)">
+                                Giphy API
+                            </a>
+                            <a id="it5_sm" class="item pt_item_sm" onClick="Pt_click_sm(this.id)">
+                                Liri CLI
+                            </a>
+                            <a id="it6_sm" class="item pt_item_sm" onClick="Pt_click_sm(this.id)">
+                                Train Scheduler
+                            </a>
+                            <a id="it7_sm" class="item pt_item_sm" onClick="Pt_click_sm(this.id)">
+                                Gymnasium AI Project
+                            </a>
+                            <a id="it8_sm" class="item pt_item_sm" onClick="Pt_click_sm(this.id)">
+                                Minesweeper
+                            </a>
+                            <a id="it9_sm" class="item pt_item_sm no_hover">
+
+                            </a>
+                            <a id="it10_sm" class="item pt_item_sm no_hover">
+
+                            </a>
+                        </div>
+                    </div>
+                    <div class="twelve wide stretched right attached column segment">
+                        <div class="ui seamless right attached segment">
+
+                            <div id="cont_it1_sm" class="pt_cont_sm pt_unhide">
+                                <div class="ui one item menu">
+                                    <a class="item" href="https://github.com/nataliedreher/bloomfilter"
+                                        target="_blank">Repository</a>
+                                </div>
+
+                                <div class="ui two column row">
+
+                                    <img id="img-sm-1" class="ui image small port-img"
+                                        src="./images/Portfolio/dollar-sign-white.jpg" alt="">
+                                </div>
+                                <div class="column ">
+                                    <p></p>
+                                    <h4>Technologies:</h4>
+                                    <p>C++, CMake</p>
+                                    <h4>Description:</h4>
+                                    <p>Implementation of a simple Bloom filter.</p>
+                                </div>
+                            </div>
+
+                            <div id="cont_it2_sm" class="pt_cont_sm">
+                                <div class="ui two item menu">
+                                    <a class="item" href="https://github.com/natalied84/React-Clicky-Game"
+                                        target="_blank">Repository</a>
+                                    <a class="item" href="https://natalied84.github.io/React-Clicky-Game/"
+                                        target="_blank">Deployment</a>
+                                </div>
+
+                                <div class="ui row">
+
+                                    <img id="img-sm-2" class="ui image small port-img"
+                                        src="./images/Portfolio/Steven_Shield_WD.png" alt="">
+                                </div>
+                                <div class="row">
+                                    <p></p>
+                                    <h4>Technologies:</h4>
+                                    <p>React.js</p>
+                                    <h4>Description:</h4>
+                                    <p>Built using React.js, objective is to click images only once.</p>
+                                </div>
+                            </div>
+
+                            <div id="cont_it3_sm" class="pt_cont_sm">
+                                <div class="ui one item menu">
+                                    <a class="item" href="https://github.com/nataliedreher/ODMTavern_AndroidProject"
+                                        target="_blank">Repository</a>
+                                </div>
+                                <div class="ui row">
+                                    <div class="column ">
+                                        <img id="img-sm-3" class="ui image small port-img"
+                                            src="./images/Portfolio/tavern_640.jpg" alt="">
+                                    </div>
+                                    <div class="row">
+                                        <p></p>
+                                        <h4>Technologies:</h4>
+                                        <p>Java, Android Studio</p>
+                                        <h4>Description:</h4>
+                                        <p>Text-based adventure Game Android app.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="cont_it4_sm" class="pt_cont_sm">
+                                <div class="ui two item menu">
+                                    <a class="item" href="https://github.com/natalied84/Giphy-HW"
+                                        target="_blank">Repository</a>
+                                    <a class="item" href="https://natalied84.github.io/Giphy-HW/"
+                                        target="_blank">Deployment</a>
+                                </div>
+                                <div class="ui row">
+                                    <img id="img-sm-4" class="ui image small port-img"
+                                        src="./images/Portfolio/Giphy-Logo.png" alt="">
+                                </div>
+                                <div class="row">
+                                    <p></p>
+                                    <h4>Technologies:</h4>
+                                    <p>Bootstrap 4, JQuery, Giphy API</p>
+                                    <h4>Description:</h4>
+                                    <p>App that displays reaction GIFs that are obtained from the Giphy API using
+                                        GET calls.</p>
+                                </div>
+                            </div>
+
+                            <div id="cont_it5_sm" class="pt_cont_sm">
+                                <div class="ui one item menu">
+                                    <a class="item" href="https://github.com/natalied84/liri-node-app"
+                                        target="_blank">Repository</a>
+                                </div>
+                                <div class="ui row">
+                                    <img id="img-sm-5" class="ui image small port-img"
+                                        src="./images/Portfolio/nodejslogo.png" alt="">
+                                </div>
+                                <div class="row">
+                                    <p></p>
+                                    <h4>Technologies:</h4>
+                                    <p>Node.js, Axios, Moment.js, Inquirer.js</p>
+                                    <h4>Description:</h4>
+                                    <p>Simple CLI app that can be used to look up concert information, get trivia,
+                                        insult the user, etc.</p>
+                                </div>
+                            </div>
+
+                            <div id="cont_it6_sm" class="pt_cont_sm">
+                                <div class="ui two item menu">
+                                    <a class="item" href="https://github.com/natalied84/Train-Time"
+                                        target="_blank">Repository</a>
+                                    <a class="item" href="https://natalied84.github.io/Train-Time/"
+                                        target="_blank">Deployment</a>
+                                </div>
+                                <div class="ui row">
+                                    <img id="img-sm-6" class="ui image small port-img"
+                                        src="./images/Portfolio/Amtrak_Cascades_cars_1.jpg" alt="">
+                                </div>
+                                <div class="row">
+                                    <p></p>
+                                    <h4>Technologies:</h4>
+                                    <p>Firebase, Moment.js, JQuery, Bootstrap 4</p>
+                                    <h4>Description:</h4>
+                                    <p>Simple train scheduling app.</p>
+                                </div>
+                            </div>
+
+                            <div id="cont_it7_sm" class="pt_cont_sm">
+                                <div class="ui one item menu">
+                                    <a class="item" href="https://github.com/nataliedreher/LunarLander-v2"
+                                        target="_blank">Repository</a>
+                                </div>
+                                <div class="ui row">
+                                    <img id="img-sm-7" class="ui image small port-img"
+                                        src="./images/Portfolio/ai-256.png" alt="">
+                                </div>
+                                <div class="row">
+                                    <p></p>
+                                    <h4>Technologies:</h4>
+                                    <p>Python, Gymnasium, Tensorboard, Stable Baselines 3</p>
+                                    <h4>Description:</h4>
+                                    <p>Project testing various AI learning methodologies on Gymnasium's Lunar
+                                        Lander environment.</p>
+                                </div>
+                            </div>
+
+                            <div id="cont_it8_sm" class="pt_cont_sm">
+                                <div class="ui two item menu">
+                                    <a class="item" href="https://github.com/lcbordelon/3308_Project_Group01"
+                                        target="_blank">Repository</a>
+                                    <a class="item" href="https://minesweeper3308.onrender.com/home"
+                                        target="_blank">Deployment</a>
+                                </div>
+                                <div class="ui row">
+                                    <img id="img-sm-8" class="ui image small port-img"
+                                        src="./images/Portfolio/mine-612.jpg" alt="">
+                                </div>
+                                <div class="row">
+                                    <p></p>
+                                    <h4>Technologies:</h4>
+                                    <p>Javascript, Flask, Python, SQLite3</p>
+                                    <h4>Description:</h4>
+                                    <p>Clone of the popular Windows game.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer">
+            <div class="ui inverted menu" style="background-color: black;">
+                <a class="item">
+                    LinkedIn
+                </a>
+                <a class="item">
+                    Github
+                </a>
+                <a class="item">
+                    n-dreher@hotmail.com
+                </a>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="./js/sidebar.js"></script>
+<script src="./js/index.js"></script>
+
+</html>
